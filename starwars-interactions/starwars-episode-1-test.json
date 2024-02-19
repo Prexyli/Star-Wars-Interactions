@@ -1,0 +1,331 @@
+{
+  "nodes": [
+    {
+      "name": "R2-D2",
+      "value": 33,
+      "colour": "#bde0f6"
+    },
+    {
+      "name": "QUI-GON",
+      "value": 61,
+      "colour": "#4f4fb1"
+    },
+    {
+      "name": "NUTE GUNRAY",
+      "value": 19,
+      "colour": "#808080"
+    },
+    {
+      "name": "PK-4",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "TC-14",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "OBI-WAN",
+      "value": 34,
+      "colour": "#48D1CC"
+    },
+    {
+      "name": "DOFINE",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "RUNE",
+      "value": 11,
+      "colour": "#808080"
+    },
+    {
+      "name": "TEY HOW",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "EMPEROR",
+      "value": 14,
+      "colour": "#191970"
+    },
+    {
+      "name": "CAPTAIN PANAKA",
+      "value": 20,
+      "colour": "#808080"
+    },
+    {
+      "name": "SIO BIBBLE",
+      "value": 8,
+      "colour": "#808080"
+    },
+    {
+      "name": "JAR JAR",
+      "value": 36,
+      "colour": "#9a9a00"
+    },
+    {
+      "name": "TARPALS",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "BOSS NASS",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "PADME",
+      "value": 31,
+      "colour": "#DDA0DD"
+    },
+    {
+      "name": "RIC OLIE",
+      "value": 12,
+      "colour": "#808080"
+    },
+    {
+      "name": "WATTO",
+      "value": 8,
+      "colour": "#808080"
+    },
+    {
+      "name": "ANAKIN",
+      "value": 41,
+      "colour": "#ce3b59"
+    },
+    {
+      "name": "SEBULBA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "JIRA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "SHMI",
+      "value": 11,
+      "colour": "#808080"
+    },
+    {
+      "name": "C-3PO",
+      "value": 6,
+      "colour": "#FFD700"
+    },
+    {
+      "name": "DARTH MAUL",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "KITSTER",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "WALD",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "FODE/BEED",
+      "value": 12,
+      "colour": "#808080"
+    },
+    {
+      "name": "JABBA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "GREEDO",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "VALORUM",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "MACE WINDU",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "KI-ADI-MUNDI",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "YODA",
+      "value": 7,
+      "colour": "#9ACD32"
+    },
+    {
+      "name": "RABE",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "BAIL ORGANA",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "GENERAL CEEL",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "BRAVO TWO",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "BRAVO THREE",
+      "value": 4,
+      "colour": "#808080"
+    }
+  ],
+  "links": [
+    { "source": "PADME", "target": "R2-D2", "value": 11 },
+    { "source": "QUI-GON", "target": "R2-D2", "value": 14 },
+    { "source": "ANAKIN", "target": "R2-D2", "value": 16 },
+    { "source": "R2-D2", "target": "WATTO", "value": 3 },
+    { "source": "C-3PO", "target": "R2-D2", "value": 2 },
+    { "source": "KITSTER", "target": "R2-D2", "value": 2 },
+    { "source": "NUTE GUNRAY", "target": "QUI-GON", "value": 1 },
+    { "source": "PK-4", "target": "TC-14", "value": 1 },
+    { "source": "OBI-WAN", "target": "TC-14", "value": 1 },
+    { "source": "QUI-GON", "target": "TC-14", "value": 1 },
+    { "source": "OBI-WAN", "target": "QUI-GON", "value": 26 },
+    { "source": "NUTE GUNRAY", "target": "TC-14", "value": 1 },
+    { "source": "DOFINE", "target": "NUTE GUNRAY", "value": 1 },
+    { "source": "DOFINE", "target": "TC-14", "value": 1 },
+    { "source": "NUTE GUNRAY", "target": "RUNE", "value": 8 },
+    { "source": "RUNE", "target": "TEY HOW", "value": 2 },
+    { "source": "NUTE GUNRAY", "target": "TEY HOW", "value": 1 },
+    { "source": "CAPTAIN PANAKA", "target": "EMPEROR", "value": 3 },
+    { "source": "EMPEROR", "target": "SIO BIBBLE", "value": 1 },
+    { "source": "CAPTAIN PANAKA", "target": "SIO BIBBLE", "value": 3 },
+    { "source": "JAR JAR", "target": "QUI-GON", "value": 22 },
+    { "source": "JAR JAR", "target": "OBI-WAN", "value": 12 },
+    { "source": "JAR JAR", "target": "TARPALS", "value": 2 },
+    { "source": "BOSS NASS", "target": "QUI-GON", "value": 2 },
+    { "source": "BOSS NASS", "target": "OBI-WAN", "value": 2 },
+    { "source": "BOSS NASS", "target": "JAR JAR", "value": 2 },
+    { "source": "EMPEROR", "target": "NUTE GUNRAY", "value": 5 },
+    { "source": "EMPEROR", "target": "RUNE", "value": 3 },
+    { "source": "NUTE GUNRAY", "target": "SIO BIBBLE", "value": 2 },
+    { "source": "JAR JAR", "target": "SIO BIBBLE", "value": 1 },
+    { "source": "CAPTAIN PANAKA", "target": "JAR JAR", "value": 7 },
+    { "source": "QUI-GON", "target": "SIO BIBBLE", "value": 2 },
+    { "source": "CAPTAIN PANAKA", "target": "QUI-GON", "value": 9 },
+    { "source": "CAPTAIN PANAKA", "target": "PADME", "value": 7 },
+    { "source": "PADME", "target": "QUI-GON", "value": 16 },
+    { "source": "PADME", "target": "SIO BIBBLE", "value": 1 },
+    { "source": "CAPTAIN PANAKA", "target": "OBI-WAN", "value": 7 },
+    { "source": "OBI-WAN", "target": "RIC OLIE", "value": 3 },
+    { "source": "JAR JAR", "target": "RIC OLIE", "value": 1 },
+    { "source": "QUI-GON", "target": "RIC OLIE", "value": 2 },
+    { "source": "CAPTAIN PANAKA", "target": "RIC OLIE", "value": 2 },
+    { "source": "JAR JAR", "target": "PADME", "value": 9 },
+    { "source": "QUI-GON", "target": "WATTO", "value": 6 },
+    { "source": "ANAKIN", "target": "WATTO", "value": 4 },
+    { "source": "PADME", "target": "WATTO", "value": 3 },
+    { "source": "ANAKIN", "target": "QUI-GON", "value": 22 },
+    { "source": "ANAKIN", "target": "PADME", "value": 16 },
+    { "source": "JAR JAR", "target": "SEBULBA", "value": 2 },
+    { "source": "ANAKIN", "target": "SEBULBA", "value": 2 },
+    { "source": "QUI-GON", "target": "SEBULBA", "value": 2 },
+    { "source": "PADME", "target": "SEBULBA", "value": 2 },
+    { "source": "ANAKIN", "target": "JAR JAR", "value": 8 },
+    { "source": "ANAKIN", "target": "JIRA", "value": 2 },
+    { "source": "JIRA", "target": "QUI-GON", "value": 2 },
+    { "source": "JIRA", "target": "PADME", "value": 1 },
+    { "source": "ANAKIN", "target": "SHMI", "value": 7 },
+    { "source": "JAR JAR", "target": "SHMI", "value": 3 },
+    { "source": "QUI-GON", "target": "SHMI", "value": 8 },
+    { "source": "PADME", "target": "SHMI", "value": 5 },
+    { "source": "ANAKIN", "target": "C-3PO", "value": 3 },
+    { "source": "C-3PO", "target": "PADME", "value": 2 },
+    { "source": "OBI-WAN", "target": "SIO BIBBLE", "value": 1 },
+    { "source": "DARTH MAUL", "target": "EMPEROR", "value": 3 },
+    { "source": "ANAKIN", "target": "KITSTER", "value": 3 },
+    { "source": "ANAKIN", "target": "WALD", "value": 2 },
+    { "source": "KITSTER", "target": "WALD", "value": 1 },
+    { "source": "JAR JAR", "target": "KITSTER", "value": 1 },
+    { "source": "KITSTER", "target": "QUI-GON", "value": 2 },
+    { "source": "JAR JAR", "target": "WALD", "value": 1 },
+    { "source": "QUI-GON", "target": "WALD", "value": 2 },
+    { "source": "ANAKIN", "target": "OBI-WAN", "value": 5 },
+    { "source": "OBI-WAN", "target": "SHMI", "value": 1 },
+    { "source": "C-3PO", "target": "WATTO", "value": 1 },
+    { "source": "KITSTER", "target": "WATTO", "value": 1 },
+    { "source": "C-3PO", "target": "QUI-GON", "value": 1 },
+    { "source": "C-3PO", "target": "KITSTER", "value": 1 },
+    { "source": "KITSTER", "target": "PADME", "value": 1 },
+    { "source": "FODE/BEED", "target": "JABBA", "value": 1 },
+    { "source": "JABBA", "target": "SHMI", "value": 1 },
+    { "source": "SEBULBA", "target": "SHMI", "value": 1 },
+    { "source": "ANAKIN", "target": "JABBA", "value": 1 },
+    { "source": "JABBA", "target": "JAR JAR", "value": 1 },
+    { "source": "JABBA", "target": "PADME", "value": 1 },
+    { "source": "JABBA", "target": "SEBULBA", "value": 1 },
+    { "source": "JABBA", "target": "QUI-GON", "value": 1 },
+    { "source": "FODE/BEED", "target": "JAR JAR", "value": 2 },
+    { "source": "FODE/BEED", "target": "PADME", "value": 1 },
+    { "source": "GREEDO", "target": "QUI-GON", "value": 1 },
+    { "source": "ANAKIN", "target": "GREEDO", "value": 1 },
+    { "source": "GREEDO", "target": "WALD", "value": 1 },
+    { "source": "KITSTER", "target": "SHMI", "value": 1 },
+    { "source": "ANAKIN", "target": "CAPTAIN PANAKA", "value": 2 },
+    { "source": "ANAKIN", "target": "RIC OLIE", "value": 4 },
+    { "source": "EMPEROR", "target": "VALORUM", "value": 2 },
+    { "source": "EMPEROR", "target": "JAR JAR", "value": 2 },
+    { "source": "EMPEROR", "target": "QUI-GON", "value": 1 },
+    { "source": "JAR JAR", "target": "VALORUM", "value": 1 },
+    { "source": "QUI-GON", "target": "VALORUM", "value": 1 },
+    { "source": "MACE WINDU", "target": "QUI-GON", "value": 2 },
+    { "source": "KI-ADI-MUNDI", "target": "QUI-GON", "value": 2 },
+    { "source": "QUI-GON", "target": "YODA", "value": 2 },
+    { "source": "QUI-GON", "target": "RABE", "value": 1 },
+    { "source": "KI-ADI-MUNDI", "target": "MACE WINDU", "value": 3 },
+    { "source": "MACE WINDU", "target": "YODA", "value": 4 },
+    { "source": "ANAKIN", "target": "MACE WINDU", "value": 3 },
+    { "source": "MACE WINDU", "target": "RABE", "value": 1 },
+    { "source": "KI-ADI-MUNDI", "target": "YODA", "value": 3 },
+    { "source": "ANAKIN", "target": "KI-ADI-MUNDI", "value": 2 },
+    { "source": "KI-ADI-MUNDI", "target": "RABE", "value": 1 },
+    { "source": "ANAKIN", "target": "YODA", "value": 3 },
+    { "source": "RABE", "target": "YODA", "value": 1 },
+    { "source": "ANAKIN", "target": "RABE", "value": 1 },
+    { "source": "BAIL ORGANA", "target": "EMPEROR", "value": 1 },
+    { "source": "BAIL ORGANA", "target": "VALORUM", "value": 1 },
+    { "source": "OBI-WAN", "target": "YODA", "value": 3 },
+    { "source": "MACE WINDU", "target": "OBI-WAN", "value": 2 },
+    { "source": "KI-ADI-MUNDI", "target": "OBI-WAN", "value": 1 },
+    { "source": "BOSS NASS", "target": "PADME", "value": 2 },
+    { "source": "DARTH MAUL", "target": "NUTE GUNRAY", "value": 3 },
+    { "source": "ANAKIN", "target": "BOSS NASS", "value": 1 },
+    { "source": "BOSS NASS", "target": "CAPTAIN PANAKA", "value": 1 },
+    { "source": "OBI-WAN", "target": "PADME", "value": 1 },
+    { "source": "EMPEROR", "target": "GENERAL CEEL", "value": 1 },
+    { "source": "GENERAL CEEL", "target": "NUTE GUNRAY", "value": 1 },
+    { "source": "DARTH MAUL", "target": "GENERAL CEEL", "value": 1 },
+    { "source": "DARTH MAUL", "target": "RUNE", "value": 1 },
+    { "source": "BRAVO TWO", "target": "RIC OLIE", "value": 4 },
+    { "source": "ANAKIN", "target": "BRAVO TWO", "value": 2 },
+    { "source": "GENERAL CEEL", "target": "JAR JAR", "value": 1 },
+    { "source": "NUTE GUNRAY", "target": "PADME", "value": 1 },
+    { "source": "DOFINE", "target": "TEY HOW", "value": 1 },
+    { "source": "BRAVO THREE", "target": "BRAVO TWO", "value": 2 },
+    { "source": "BRAVO THREE", "target": "RIC OLIE", "value": 2 },
+    { "source": "ANAKIN", "target": "BRAVO THREE", "value": 1 },
+    { "source": "EMPEROR", "target": "PADME", "value": 1 }
+  ]
+}
