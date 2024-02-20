@@ -1,0 +1,381 @@
+{
+  "nodes": [
+    {
+      "name": "R2-D2",
+      "value": 27,
+      "colour": "#bde0f6"
+    },
+    {
+      "name": "CHEWBACCA",
+      "value": 28,
+      "colour": "#A0522D"
+    },
+    {
+      "name": "JERJERROD",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "DARTH VADER",
+      "value": 13,
+      "colour": "#000000"
+    },
+    {
+      "name": "C-3PO",
+      "value": 33,
+      "colour": "#FFD700"
+    },
+    {
+      "name": "BIB FORTUNA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "JABBA",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "LUKE",
+      "value": 31,
+      "colour": "#3881e5"
+    },
+    {
+      "name": "BOUSHH",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "HAN",
+      "value": 33,
+      "colour": "#ff9400"
+    },
+    {
+      "name": "LEIA",
+      "value": 22,
+      "colour": "#DCDCDC"
+    },
+    {
+      "name": "LANDO",
+      "value": 21,
+      "colour": "#808080"
+    },
+    {
+      "name": "EMPEROR",
+      "value": 11,
+      "colour": "#191970"
+    },
+    {
+      "name": "YODA",
+      "value": 3,
+      "colour": "#9ACD32"
+    },
+    {
+      "name": "OBI-WAN",
+      "value": 3,
+      "colour": "#48D1CC"
+    },
+    {
+      "name": "MON MOTHMA",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "ADMIRAL ACKBAR",
+      "value": 10,
+      "colour": "#808080"
+    },
+    {
+      "name": "PIETT",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "WEDGE",
+      "value": 8,
+      "colour": "#808080"
+    },
+    {
+      "name": "ANAKIN",
+      "value": 3,
+      "colour": "#ce3b59"
+    }
+  ],
+  "links": [
+    {
+      "source": "CHEWBACCA",
+      "target": "R2-D2",
+      "value": 8
+    },
+    {
+      "source": "C-3PO",
+      "target": "R2-D2",
+      "value": 14
+    },
+    {
+      "source": "LANDO",
+      "target": "R2-D2",
+      "value": 2
+    },
+    {
+      "source": "JABBA",
+      "target": "R2-D2",
+      "value": 2
+    },
+    {
+      "source": "LUKE",
+      "target": "R2-D2",
+      "value": 8
+    },
+    {
+      "source": "HAN",
+      "target": "R2-D2",
+      "value": 9
+    },
+    {
+      "source": "LEIA",
+      "target": "R2-D2",
+      "value": 12
+    },
+    {
+      "source": "MON MOTHMA",
+      "target": "R2-D2",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "CHEWBACCA",
+      "value": 13
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "LANDO",
+      "value": 6
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "HAN",
+      "value": 20
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "LUKE",
+      "value": 10
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "LEIA",
+      "value": 14
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "DARTH VADER",
+      "target": "JERJERROD",
+      "value": 1
+    },
+    {
+      "source": "BIB FORTUNA",
+      "target": "C-3PO",
+      "value": 2
+    },
+    {
+      "source": "C-3PO",
+      "target": "JABBA",
+      "value": 3
+    },
+    {
+      "source": "C-3PO",
+      "target": "LUKE",
+      "value": 10
+    },
+    {
+      "source": "JABBA",
+      "target": "LUKE",
+      "value": 2
+    },
+    {
+      "source": "BOUSHH",
+      "target": "JABBA",
+      "value": 1
+    },
+    {
+      "source": "BOUSHH",
+      "target": "C-3PO",
+      "value": 2
+    },
+    {
+      "source": "BOUSHH",
+      "target": "HAN",
+      "value": 1
+    },
+    {
+      "source": "BOUSHH",
+      "target": "LEIA",
+      "value": 1
+    },
+    {
+      "source": "HAN",
+      "target": "LEIA",
+      "value": 18
+    },
+    {
+      "source": "C-3PO",
+      "target": "HAN",
+      "value": 18
+    },
+    {
+      "source": "C-3PO",
+      "target": "LEIA",
+      "value": 15
+    },
+    {
+      "source": "BIB FORTUNA",
+      "target": "LUKE",
+      "value": 1
+    },
+    {
+      "source": "BIB FORTUNA",
+      "target": "JABBA",
+      "value": 1
+    },
+    {
+      "source": "HAN",
+      "target": "LUKE",
+      "value": 13
+    },
+    {
+      "source": "LEIA",
+      "target": "LUKE",
+      "value": 8
+    },
+    {
+      "source": "LANDO",
+      "target": "LUKE",
+      "value": 4
+    },
+    {
+      "source": "HAN",
+      "target": "LANDO",
+      "value": 5
+    },
+    {
+      "source": "LANDO",
+      "target": "LEIA",
+      "value": 2
+    },
+    {
+      "source": "DARTH VADER",
+      "target": "EMPEROR",
+      "value": 5
+    },
+    {
+      "source": "LUKE",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "LUKE",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "HAN",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "HAN",
+      "value": 1
+    },
+    {
+      "source": "LANDO",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "LANDO",
+      "value": 5
+    },
+    {
+      "source": "C-3PO",
+      "target": "LANDO",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "LEIA",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "LUKE",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "C-3PO",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "LEIA",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "LUKE",
+      "value": 1
+    },
+    {
+      "source": "DARTH VADER",
+      "target": "PIETT",
+      "value": 1
+    },
+    {
+      "source": "DARTH VADER",
+      "target": "LUKE",
+      "value": 5
+    },
+    {
+      "source": "EMPEROR",
+      "target": "LUKE",
+      "value": 3
+    },
+    {
+      "source": "LANDO",
+      "target": "WEDGE",
+      "value": 6
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "WEDGE",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "DARTH VADER",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "LUKE",
+      "value": 1
+    }
+  ]
+}

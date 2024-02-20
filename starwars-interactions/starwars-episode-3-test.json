@@ -1,0 +1,456 @@
+{
+  "nodes": [
+    {
+      "name": "R2-D2",
+      "value": 31,
+      "colour": "#bde0f6"
+    },
+    {
+      "name": "ANAKIN",
+      "value": 54,
+      "colour": "#ce3b59"
+    },
+    {
+      "name": "OBI-WAN",
+      "value": 60,
+      "colour": "#48D1CC"
+    },
+    {
+      "name": "ODD BALL",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "GENERAL GRIEVOUS",
+      "value": 13,
+      "colour": "#808080"
+    },
+    {
+      "name": "EMPEROR",
+      "value": 25,
+      "colour": "#191970"
+    },
+    {
+      "name": "COUNT DOOKU",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "BAIL ORGANA",
+      "value": 21,
+      "colour": "#808080"
+    },
+    {
+      "name": "C-3PO",
+      "value": 16,
+      "colour": "#FFD700"
+    },
+    {
+      "name": "PADME",
+      "value": 24,
+      "colour": "#DDA0DD"
+    },
+    {
+      "name": "YODA",
+      "value": 24,
+      "colour": "#9ACD32"
+    },
+    {
+      "name": "FANG ZAR",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "MON MOTHMA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "GIDDEAN DANU",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "MACE WINDU",
+      "value": 8,
+      "colour": "#808080"
+    },
+    {
+      "name": "CAPTAIN TYPHO",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "CLONE COMMANDER GREE",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "CLONE COMMANDER CODY",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "JAR JAR",
+      "value": 3,
+      "colour": "#9a9a00"
+    },
+    {
+      "name": "TION MEDON",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "NUTE GUNRAY",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "PLO KOON",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "CAPTAIN ANTILLES",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "DARTH VADER",
+      "value": 5,
+      "colour": "#000000"
+    },
+    {
+      "name": "QUI-GON",
+      "value": 3,
+      "colour": "#4f4fb1"
+    }
+  ],
+  "links": [
+    {
+      "source": "EMPEROR",
+      "target": "R2-D2",
+      "value": 2
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "R2-D2",
+      "value": 12
+    },
+    {
+      "source": "ANAKIN",
+      "target": "R2-D2",
+      "value": 9
+    },
+    {
+      "source": "C-3PO",
+      "target": "R2-D2",
+      "value": 5
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "R2-D2",
+      "value": 4
+    },
+    {
+      "source": "PADME",
+      "target": "R2-D2",
+      "value": 4
+    },
+    {
+      "source": "R2-D2",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "CAPTAIN ANTILLES",
+      "target": "R2-D2",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "OBI-WAN",
+      "value": 28
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "ODD BALL",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "ODD BALL",
+      "value": 2
+    },
+    {
+      "source": "EMPEROR",
+      "target": "OBI-WAN",
+      "value": 4
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "EMPEROR",
+      "value": 14
+    },
+    {
+      "source": "ANAKIN",
+      "target": "COUNT DOOKU",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "EMPEROR",
+      "value": 1
+    },
+    {
+      "source": "GENERAL GRIEVOUS",
+      "target": "OBI-WAN",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "GENERAL GRIEVOUS",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "BAIL ORGANA",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "C-3PO",
+      "value": 4
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "OBI-WAN",
+      "value": 7
+    },
+    {
+      "source": "C-3PO",
+      "target": "OBI-WAN",
+      "value": 3
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "EMPEROR",
+      "value": 3
+    },
+    {
+      "source": "C-3PO",
+      "target": "EMPEROR",
+      "value": 2
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "C-3PO",
+      "value": 3
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "PADME",
+      "value": 5
+    },
+    {
+      "source": "ANAKIN",
+      "target": "PADME",
+      "value": 9
+    },
+    {
+      "source": "ANAKIN",
+      "target": "YODA",
+      "value": 5
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "FANG ZAR",
+      "value": 2
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "MON MOTHMA",
+      "value": 2
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "GIDDEAN DANU",
+      "value": 1
+    },
+    {
+      "source": "FANG ZAR",
+      "target": "PADME",
+      "value": 2
+    },
+    {
+      "source": "FANG ZAR",
+      "target": "MON MOTHMA",
+      "value": 2
+    },
+    {
+      "source": "FANG ZAR",
+      "target": "GIDDEAN DANU",
+      "value": 1
+    },
+    {
+      "source": "MON MOTHMA",
+      "target": "PADME",
+      "value": 2
+    },
+    {
+      "source": "GIDDEAN DANU",
+      "target": "PADME",
+      "value": 1
+    },
+    {
+      "source": "GIDDEAN DANU",
+      "target": "MON MOTHMA",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "MACE WINDU",
+      "value": 5
+    },
+    {
+      "source": "MACE WINDU",
+      "target": "YODA",
+      "value": 4
+    },
+    {
+      "source": "MACE WINDU",
+      "target": "OBI-WAN",
+      "value": 3
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "YODA",
+      "value": 11
+    },
+    {
+      "source": "CAPTAIN TYPHO",
+      "target": "PADME",
+      "value": 2
+    },
+    {
+      "source": "C-3PO",
+      "target": "PADME",
+      "value": 5
+    },
+    {
+      "source": "C-3PO",
+      "target": "CAPTAIN TYPHO",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "CAPTAIN TYPHO",
+      "value": 1
+    },
+    {
+      "source": "CLONE COMMANDER GREE",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "PADME",
+      "value": 6
+    },
+    {
+      "source": "CLONE COMMANDER CODY",
+      "target": "OBI-WAN",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "JAR JAR",
+      "value": 1
+    },
+    {
+      "source": "EMPEROR",
+      "target": "JAR JAR",
+      "value": 1
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "TION MEDON",
+      "value": 1
+    },
+    {
+      "source": "GENERAL GRIEVOUS",
+      "target": "NUTE GUNRAY",
+      "value": 1
+    },
+    {
+      "source": "EMPEROR",
+      "target": "PADME",
+      "value": 4
+    },
+    {
+      "source": "ANAKIN",
+      "target": "CLONE COMMANDER CODY",
+      "value": 1
+    },
+    {
+      "source": "CLONE COMMANDER CODY",
+      "target": "MACE WINDU",
+      "value": 1
+    },
+    {
+      "source": "CLONE COMMANDER CODY",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "EMPEROR",
+      "target": "MACE WINDU",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "CAPTAIN ANTILLES",
+      "value": 2
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "YODA",
+      "value": 6
+    },
+    {
+      "source": "EMPEROR",
+      "target": "NUTE GUNRAY",
+      "value": 1
+    },
+    {
+      "source": "QUI-GON",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "QUI-GON",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "DARTH VADER",
+      "target": "EMPEROR",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "CAPTAIN ANTILLES",
+      "value": 1
+    }
+  ]
+}

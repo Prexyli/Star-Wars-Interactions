@@ -1,0 +1,676 @@
+{
+  "nodes": [
+    {
+      "name": "R2-D2",
+      "value": 15,
+      "colour": "#bde0f6"
+    },
+    {
+      "name": "CAPTAIN TYPHO",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "EMPEROR",
+      "value": 7,
+      "colour": "#191970"
+    },
+    {
+      "name": "SENATOR ASK AAK",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "ORN FREE TAA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "MACE WINDU",
+      "value": 13,
+      "colour": "#808080"
+    },
+    {
+      "name": "YODA",
+      "value": 13,
+      "colour": "#9ACD32"
+    },
+    {
+      "name": "KI-ADI-MUNDI",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "BAIL ORGANA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "JAR JAR",
+      "value": 7,
+      "colour": "#9a9a00"
+    },
+    {
+      "name": "OBI-WAN",
+      "value": 34,
+      "colour": "#48D1CC"
+    },
+    {
+      "name": "ANAKIN",
+      "value": 40,
+      "colour": "#ce3b59"
+    },
+    {
+      "name": "PADME",
+      "value": 24,
+      "colour": "#DDA0DD"
+    },
+    {
+      "name": "PK-4",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "SIO BIBBLE",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "SOLA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "JOBAL",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "RUWEE",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "TAUN WE",
+      "value": 8,
+      "colour": "#808080"
+    },
+    {
+      "name": "LAMA SU",
+      "value": 9,
+      "colour": "#808080"
+    },
+    {
+      "name": "BOBA FETT",
+      "value": 7,
+      "colour": "#808080"
+    },
+    {
+      "name": "JANGO FETT",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "WATTO",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "C-3PO",
+      "value": 10,
+      "colour": "#FFD700"
+    },
+    {
+      "name": "OWEN",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "BERU",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "CLIEGG",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "SHMI",
+      "value": 3,
+      "colour": "#808080"
+    },
+    {
+      "name": "COUNT DOOKU",
+      "value": 9,
+      "colour": "#808080"
+    },
+    {
+      "name": "SUN RIT",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "POGGLE",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "NUTE GUNRAY",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "PLO KOON",
+      "value": 3,
+      "colour": "#808080"
+    }
+  ],
+  "links": [
+    {
+      "source": "PADME",
+      "target": "R2-D2",
+      "value": 7
+    },
+    {
+      "source": "ANAKIN",
+      "target": "R2-D2",
+      "value": 7
+    },
+    {
+      "source": "C-3PO",
+      "target": "R2-D2",
+      "value": 3
+    },
+    {
+      "source": "EMPEROR",
+      "target": "SENATOR ASK AAK",
+      "value": 2
+    },
+    {
+      "source": "EMPEROR",
+      "target": "ORN FREE TAA",
+      "value": 2
+    },
+    {
+      "source": "ORN FREE TAA",
+      "target": "SENATOR ASK AAK",
+      "value": 1
+    },
+    {
+      "source": "EMPEROR",
+      "target": "MACE WINDU",
+      "value": 2
+    },
+    {
+      "source": "EMPEROR",
+      "target": "YODA",
+      "value": 2
+    },
+    {
+      "source": "EMPEROR",
+      "target": "KI-ADI-MUNDI",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "EMPEROR",
+      "value": 2
+    },
+    {
+      "source": "MACE WINDU",
+      "target": "YODA",
+      "value": 8
+    },
+    {
+      "source": "KI-ADI-MUNDI",
+      "target": "MACE WINDU",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "MACE WINDU",
+      "value": 2
+    },
+    {
+      "source": "KI-ADI-MUNDI",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "YODA",
+      "value": 2
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "KI-ADI-MUNDI",
+      "value": 1
+    },
+    {
+      "source": "JAR JAR",
+      "target": "OBI-WAN",
+      "value": 3
+    },
+    {
+      "source": "ANAKIN",
+      "target": "JAR JAR",
+      "value": 3
+    },
+    {
+      "source": "ANAKIN",
+      "target": "OBI-WAN",
+      "value": 13
+    },
+    {
+      "source": "CAPTAIN TYPHO",
+      "target": "JAR JAR",
+      "value": 1
+    },
+    {
+      "source": "CAPTAIN TYPHO",
+      "target": "OBI-WAN",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "CAPTAIN TYPHO",
+      "value": 2
+    },
+    {
+      "source": "JAR JAR",
+      "target": "PADME",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "PADME",
+      "value": 16
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "PK-4",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "SIO BIBBLE",
+      "value": 1
+    },
+    {
+      "source": "PADME",
+      "target": "SOLA",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "SOLA",
+      "value": 1
+    },
+    {
+      "source": "JOBAL",
+      "target": "SOLA",
+      "value": 2
+    },
+    {
+      "source": "RUWEE",
+      "target": "SOLA",
+      "value": 1
+    },
+    {
+      "source": "JOBAL",
+      "target": "PADME",
+      "value": 1
+    },
+    {
+      "source": "PADME",
+      "target": "RUWEE",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "JOBAL",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "RUWEE",
+      "value": 3
+    },
+    {
+      "source": "JOBAL",
+      "target": "RUWEE",
+      "value": 1
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "YODA",
+      "value": 5
+    },
+    {
+      "source": "MACE WINDU",
+      "target": "OBI-WAN",
+      "value": 4
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "TAUN WE",
+      "value": 5
+    },
+    {
+      "source": "LAMA SU",
+      "target": "TAUN WE",
+      "value": 2
+    },
+    {
+      "source": "LAMA SU",
+      "target": "OBI-WAN",
+      "value": 6
+    },
+    {
+      "source": "BOBA FETT",
+      "target": "TAUN WE",
+      "value": 2
+    },
+    {
+      "source": "BOBA FETT",
+      "target": "JANGO FETT",
+      "value": 3
+    },
+    {
+      "source": "BOBA FETT",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "JANGO FETT",
+      "target": "TAUN WE",
+      "value": 1
+    },
+    {
+      "source": "JANGO FETT",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "WATTO",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "C-3PO",
+      "value": 3
+    },
+    {
+      "source": "C-3PO",
+      "target": "PADME",
+      "value": 5
+    },
+    {
+      "source": "C-3PO",
+      "target": "OWEN",
+      "value": 2
+    },
+    {
+      "source": "BERU",
+      "target": "C-3PO",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "CLIEGG",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "OWEN",
+      "value": 3
+    },
+    {
+      "source": "ANAKIN",
+      "target": "BERU",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "CLIEGG",
+      "value": 2
+    },
+    {
+      "source": "BERU",
+      "target": "OWEN",
+      "value": 1
+    },
+    {
+      "source": "OWEN",
+      "target": "PADME",
+      "value": 4
+    },
+    {
+      "source": "CLIEGG",
+      "target": "OWEN",
+      "value": 2
+    },
+    {
+      "source": "BERU",
+      "target": "PADME",
+      "value": 1
+    },
+    {
+      "source": "BERU",
+      "target": "CLIEGG",
+      "value": 1
+    },
+    {
+      "source": "CLIEGG",
+      "target": "PADME",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "SHMI",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "EMPEROR",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "SENATOR ASK AAK",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "SENATOR ASK AAK",
+      "value": 1
+    },
+    {
+      "source": "BAIL ORGANA",
+      "target": "JAR JAR",
+      "value": 1
+    },
+    {
+      "source": "EMPEROR",
+      "target": "JAR JAR",
+      "value": 2
+    },
+    {
+      "source": "SENATOR ASK AAK",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "JAR JAR",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "MACE WINDU",
+      "target": "SENATOR ASK AAK",
+      "value": 1
+    },
+    {
+      "source": "JAR JAR",
+      "target": "MACE WINDU",
+      "value": 1
+    },
+    {
+      "source": "JAR JAR",
+      "target": "SENATOR ASK AAK",
+      "value": 1
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "PADME",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "MACE WINDU",
+      "value": 1
+    },
+    {
+      "source": "MACE WINDU",
+      "target": "PADME",
+      "value": 2
+    },
+    {
+      "source": "JAR JAR",
+      "target": "ORN FREE TAA",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "PADME",
+      "value": 3
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "JANGO FETT",
+      "value": 1
+    },
+    {
+      "source": "POGGLE",
+      "target": "SUN RIT",
+      "value": 2
+    },
+    {
+      "source": "NUTE GUNRAY",
+      "target": "SUN RIT",
+      "value": 2
+    },
+    {
+      "source": "NUTE GUNRAY",
+      "target": "POGGLE",
+      "value": 2
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "SUN RIT",
+      "value": 1
+    },
+    {
+      "source": "OBI-WAN",
+      "target": "POGGLE",
+      "value": 1
+    },
+    {
+      "source": "NUTE GUNRAY",
+      "target": "OBI-WAN",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "OBI-WAN",
+      "value": 2
+    },
+    {
+      "source": "ANAKIN",
+      "target": "SUN RIT",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "POGGLE",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "NUTE GUNRAY",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "COUNT DOOKU",
+      "value": 2
+    },
+    {
+      "source": "PADME",
+      "target": "SUN RIT",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "SUN RIT",
+      "value": 1
+    },
+    {
+      "source": "PADME",
+      "target": "POGGLE",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "POGGLE",
+      "value": 1
+    },
+    {
+      "source": "NUTE GUNRAY",
+      "target": "PADME",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "NUTE GUNRAY",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "MACE WINDU",
+      "value": 2
+    },
+    {
+      "source": "KI-ADI-MUNDI",
+      "target": "PLO KOON",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "YODA",
+      "value": 2
+    },
+    {
+      "source": "PADME",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "ANAKIN",
+      "target": "YODA",
+      "value": 1
+    },
+    {
+      "source": "COUNT DOOKU",
+      "target": "EMPEROR",
+      "value": 1
+    }
+  ]
+}

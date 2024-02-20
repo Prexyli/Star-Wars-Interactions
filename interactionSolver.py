@@ -1,6 +1,6 @@
 import json
 
-with open("./starwars-interactions/starwars-episode-4-interactions-allCharacters.json") as f:
+with open("./starwars-interactions/starwars-episode-7-interactions-allCharacters.json") as f:
     data = json.load(f)
 
 nodes = data["nodes"]

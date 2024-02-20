@@ -1,0 +1,601 @@
+{
+  "nodes": [
+    {
+      "name": "LUKE",
+      "value": 2,
+      "colour": "#3881e5"
+    },
+    {
+      "name": "R2-D2",
+      "value": 5,
+      "colour": "#bde0f6"
+    },
+    {
+      "name": "CHEWBACCA",
+      "value": 43,
+      "colour": "#A0522D"
+    },
+    {
+      "name": "BB-8",
+      "value": 40,
+      "colour": "#eb5d00"
+    },
+    {
+      "name": "LOR SAN TEKKA",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "POE",
+      "value": 31,
+      "colour": "#a15bea"
+    },
+    {
+      "name": "KYLO REN",
+      "value": 23,
+      "colour": "#000000"
+    },
+    {
+      "name": "CAPTAIN PHASMA",
+      "value": 7,
+      "colour": "#808080"
+    },
+    {
+      "name": "FINN",
+      "value": 64,
+      "colour": "#07b19f"
+    },
+    {
+      "name": "UNKAR PLUTT",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "REY",
+      "value": 57,
+      "colour": "#ffe0af"
+    },
+    {
+      "name": "GENERAL HUX",
+      "value": 15,
+      "colour": "#808080"
+    },
+    {
+      "name": "LIEUTENANT MITAKA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "HAN",
+      "value": 47,
+      "colour": "#ff9400"
+    },
+    {
+      "name": "BALA-TIK",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "SNOKE",
+      "value": 5,
+      "colour": "#191970"
+    },
+    {
+      "name": "MAZ",
+      "value": 7,
+      "colour": "#808080"
+    },
+    {
+      "name": "C-3PO",
+      "value": 9,
+      "colour": "#FFD700"
+    },
+    {
+      "name": "LEIA",
+      "value": 11,
+      "colour": "#DCDCDC"
+    },
+    {
+      "name": "SNAP",
+      "value": 6,
+      "colour": "#808080"
+    },
+    {
+      "name": "ADMIRAL ACKBAR",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "ADMIRAL STATURA",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "YOLO ZIFF",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "COLONEL DATOO",
+      "value": 4,
+      "colour": "#808080"
+    },
+    {
+      "name": "ELLO ASTY",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "JESS",
+      "value": 5,
+      "colour": "#808080"
+    },
+    {
+      "name": "NIV LEK",
+      "value": 4,
+      "colour": "#808080"
+    }
+  ],
+  "links": [
+    {
+      "source": "CHEWBACCA",
+      "target": "R2-D2",
+      "value": 1
+    },
+    {
+      "source": "BB-8",
+      "target": "R2-D2",
+      "value": 2
+    },
+    {
+      "source": "BB-8",
+      "target": "CHEWBACCA",
+      "value": 9
+    },
+    {
+      "source": "C-3PO",
+      "target": "R2-D2",
+      "value": 2
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "FINN",
+      "value": 20
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "REY",
+      "value": 13
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "HAN",
+      "value": 24
+    },
+    {
+      "source": "BALA-TIK",
+      "target": "CHEWBACCA",
+      "value": 1
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "MAZ",
+      "value": 2
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "POE",
+      "value": 2
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "KYLO REN",
+      "value": 3
+    },
+    {
+      "source": "C-3PO",
+      "target": "CHEWBACCA",
+      "value": 2
+    },
+    {
+      "source": "CHEWBACCA",
+      "target": "LEIA",
+      "value": 3
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "CHEWBACCA",
+      "value": 1
+    },
+    {
+      "source": "BB-8",
+      "target": "POE",
+      "value": 8
+    },
+    {
+      "source": "BB-8",
+      "target": "LOR SAN TEKKA",
+      "value": 2
+    },
+    {
+      "source": "BB-8",
+      "target": "REY",
+      "value": 17
+    },
+    {
+      "source": "BB-8",
+      "target": "UNKAR PLUTT",
+      "value": 1
+    },
+    {
+      "source": "BB-8",
+      "target": "FINN",
+      "value": 15
+    },
+    {
+      "source": "BB-8",
+      "target": "HAN",
+      "value": 10
+    },
+    {
+      "source": "BALA-TIK",
+      "target": "BB-8",
+      "value": 1
+    },
+    {
+      "source": "BB-8",
+      "target": "MAZ",
+      "value": 3
+    },
+    {
+      "source": "BB-8",
+      "target": "LEIA",
+      "value": 3
+    },
+    {
+      "source": "BB-8",
+      "target": "C-3PO",
+      "value": 5
+    },
+    {
+      "source": "LOR SAN TEKKA",
+      "target": "POE",
+      "value": 3
+    },
+    {
+      "source": "KYLO REN",
+      "target": "LOR SAN TEKKA",
+      "value": 1
+    },
+    {
+      "source": "KYLO REN",
+      "target": "POE",
+      "value": 2
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "KYLO REN",
+      "value": 1
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "LOR SAN TEKKA",
+      "value": 1
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "POE",
+      "value": 1
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "FINN",
+      "value": 3
+    },
+    {
+      "source": "GENERAL HUX",
+      "target": "KYLO REN",
+      "value": 5
+    },
+    {
+      "source": "REY",
+      "target": "UNKAR PLUTT",
+      "value": 2
+    },
+    {
+      "source": "FINN",
+      "target": "POE",
+      "value": 11
+    },
+    {
+      "source": "GENERAL HUX",
+      "target": "LIEUTENANT MITAKA",
+      "value": 1
+    },
+    {
+      "source": "KYLO REN",
+      "target": "LIEUTENANT MITAKA",
+      "value": 2
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "GENERAL HUX",
+      "value": 1
+    },
+    {
+      "source": "FINN",
+      "target": "REY",
+      "value": 29
+    },
+    {
+      "source": "HAN",
+      "target": "REY",
+      "value": 17
+    },
+    {
+      "source": "FINN",
+      "target": "HAN",
+      "value": 23
+    },
+    {
+      "source": "BALA-TIK",
+      "target": "HAN",
+      "value": 2
+    },
+    {
+      "source": "BALA-TIK",
+      "target": "REY",
+      "value": 1
+    },
+    {
+      "source": "BALA-TIK",
+      "target": "FINN",
+      "value": 1
+    },
+    {
+      "source": "GENERAL HUX",
+      "target": "SNOKE",
+      "value": 3
+    },
+    {
+      "source": "KYLO REN",
+      "target": "SNOKE",
+      "value": 2
+    },
+    {
+      "source": "HAN",
+      "target": "MAZ",
+      "value": 4
+    },
+    {
+      "source": "FINN",
+      "target": "MAZ",
+      "value": 2
+    },
+    {
+      "source": "MAZ",
+      "target": "REY",
+      "value": 2
+    },
+    {
+      "source": "HAN",
+      "target": "POE",
+      "value": 2
+    },
+    {
+      "source": "C-3PO",
+      "target": "HAN",
+      "value": 3
+    },
+    {
+      "source": "C-3PO",
+      "target": "LEIA",
+      "value": 5
+    },
+    {
+      "source": "HAN",
+      "target": "LEIA",
+      "value": 5
+    },
+    {
+      "source": "LEIA",
+      "target": "POE",
+      "value": 3
+    },
+    {
+      "source": "FINN",
+      "target": "LEIA",
+      "value": 3
+    },
+    {
+      "source": "KYLO REN",
+      "target": "REY",
+      "value": 4
+    },
+    {
+      "source": "POE",
+      "target": "SNAP",
+      "value": 2
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "POE",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "POE",
+      "value": 2
+    },
+    {
+      "source": "ADMIRAL STATURA",
+      "target": "POE",
+      "value": 1
+    },
+    {
+      "source": "HAN",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "FINN",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "LEIA",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL STATURA",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "HAN",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL STATURA",
+      "target": "HAN",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "FINN",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "LEIA",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "C-3PO",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL ACKBAR",
+      "target": "ADMIRAL STATURA",
+      "value": 1
+    },
+    {
+      "source": "C-3PO",
+      "target": "FINN",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL STATURA",
+      "target": "FINN",
+      "value": 1
+    },
+    {
+      "source": "ADMIRAL STATURA",
+      "target": "LEIA",
+      "value": 2
+    },
+    {
+      "source": "ADMIRAL STATURA",
+      "target": "C-3PO",
+      "value": 2
+    },
+    {
+      "source": "CAPTAIN PHASMA",
+      "target": "HAN",
+      "value": 2
+    },
+    {
+      "source": "COLONEL DATOO",
+      "target": "GENERAL HUX",
+      "value": 1
+    },
+    {
+      "source": "ELLO ASTY",
+      "target": "POE",
+      "value": 3
+    },
+    {
+      "source": "JESS",
+      "target": "SNAP",
+      "value": 1
+    },
+    {
+      "source": "HAN",
+      "target": "KYLO REN",
+      "value": 3
+    },
+    {
+      "source": "FINN",
+      "target": "KYLO REN",
+      "value": 2
+    },
+    {
+      "source": "JESS",
+      "target": "NIV LEK",
+      "value": 2
+    },
+    {
+      "source": "NIV LEK",
+      "target": "YOLO ZIFF",
+      "value": 1
+    },
+    {
+      "source": "NIV LEK",
+      "target": "POE",
+      "value": 2
+    },
+    {
+      "source": "ELLO ASTY",
+      "target": "NIV LEK",
+      "value": 2
+    },
+    {
+      "source": "JESS",
+      "target": "YOLO ZIFF",
+      "value": 1
+    },
+    {
+      "source": "JESS",
+      "target": "POE",
+      "value": 2
+    },
+    {
+      "source": "ELLO ASTY",
+      "target": "JESS",
+      "value": 2
+    },
+    {
+      "source": "POE",
+      "target": "YOLO ZIFF",
+      "value": 1
+    },
+    {
+      "source": "ELLO ASTY",
+      "target": "YOLO ZIFF",
+      "value": 1
+    },
+    {
+      "source": "LEIA",
+      "target": "REY",
+      "value": 1
+    },
+    {
+      "source": "LUKE",
+      "target": "REY",
+      "value": 1
+    }
+  ]
+}

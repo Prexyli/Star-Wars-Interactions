@@ -1,19 +1,26 @@
-function chart(data, id) {
+function chart(data, id, selectButton) {
+
     const width = 700;
     const height = 500;
-    
+
     //Specify the color scale
     const color = d3.scaleOrdinal(d3.schemeCategory10);
 
     //Extract nodes and links from the data
-    const links = data.links.map(d => ({...d}));
+    let links = data.links.filter(function(d) {
+        if (d.value < 0) {
+            return false; // skip
+        }
+        return true
+    })
+    links = links.map(d => ({...d}));
     const nodes = data.nodes.map(d => ({...d}));
 
     var clicked = []
 
     //Create a simulation with several forces.
     const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(links).id(d => d.name).distance(50))
+        .force("link", d3.forceLink(links).id(d => d.name).distance(70))
         .force("charge", d3.forceManyBody())
         .force("collide", d3.forceCollide(d => Math.log(d.value)*3+1).iterations(10))
         .force("center", d3.forceCenter(width / 2, height / 2))
@@ -21,6 +28,12 @@ function chart(data, id) {
         .force("forceY", d3.forceY(height/2).strength(0.05)) // Btw GOLD FIVE actually interacts with RED LEADER in episode 4 so...
         .on("tick", ticked)
     
+    /*
+    const grid = d3.select('.grid').node()
+    ? d3.select('.grid')
+     : g.append('g')
+      .attr('class', 'grid');
+    */
     const svg = d3.select(id).append("svg")
         .attr("width", width)
         .attr("height", height)
@@ -130,6 +143,10 @@ function chart(data, id) {
     }
 
     //invalidation.then(() => simulation.stop())
+
+    
+
+    
 
     return svg.node()
 

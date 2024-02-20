@@ -11,12 +11,12 @@
     border: 1px solid #c4c4c4;
 }
 
-#chart1 {
+.group1 {
     grid-area: 1 / 1 / 2 / 3;
     
 }
 
-#chart2 {
+.group2 {
     /*border-left-style: none;*/
     grid-area: 1 / 3 / 2 / 5;
 }
