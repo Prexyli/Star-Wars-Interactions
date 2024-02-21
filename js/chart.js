@@ -20,7 +20,7 @@ function chart(data, id, selectButton) {
 
     //Create a simulation with several forces.
     const simulation = d3.forceSimulation(nodes)
-        .force("link", d3.forceLink(links).id(d => d.name).distance(70))
+        .force("link", d3.forceLink(links).id(d => d.name).distance(80))
         .force("charge", d3.forceManyBody())
         .force("collide", d3.forceCollide(d => Math.log(d.value)*3+1).iterations(10))
         .force("center", d3.forceCenter(width / 2, height / 2))
@@ -51,8 +51,9 @@ function chart(data, id, selectButton) {
                 const data = d.target.__data__
                 d3.select(this).attr("stroke-width", 10)
                 //tooltip.transition().duration(200).style("opacity", .9);
-                tooltip.html(`<span class="tooltip-title">INTERACTIONS BETWEEN</span><br/><span class="tooltip-name">${data.source.name}</span><br><span class="tooltip-title">AND</span><br/><span class="tooltip-name">${data.target.name}</span><br/>
-                            <span class="tooltip-title">Number of interaction: </span><br/><span class="tooltip-name">${data.value}</span>`).style("left", (d.x) + "px").style("top", (d.y) + "px")
+                tooltip.html(`<div class="tooltip-imggroup"><img src="../Images/${data.source.name.replace("/","_")}.webp" alt="${data.source.name}" class="tooltip-image" width="100"/><img src="../Images/${data.target.name.replace("/","_")}.webp" alt="${data.target.name}" class="tooltip-image" width="100"/></div>
+                <span class="tooltip-title">INTERACTIONS BETWEEN</span><br/><span class="tooltip-name">${data.source.name}</span><br><span class="tooltip-title">AND</span><br/><span class="tooltip-name">${data.target.name}</span><br/>
+                            <span class="tooltip-title">Number of interaction: </span><br/><span class="tooltip-name">${data.value}</span>`)
             })
             .on("mouseout", function(d) {
                 d3.select(this).attr("stroke-width", Math.sqrt(d.target.__data__.value)*1.5)
@@ -72,7 +73,8 @@ function chart(data, id, selectButton) {
                 const data = d.target.__data__
                 //console.log(d);
                 //tooltip.transition().duration(200).style("opacity", .9);
-                tooltip.html(`<span class="tooltip-name">${data.name}</span><br/><span class="tooltip-title">Number of aperances: </span><br/><span class="tooltip-name">${data.value}</span>`).style("left", (d.x) + "px").style("top", (d.y) + "px")
+                tooltip.html(`<img src="../Images/${data.name.replace("/","_")}.webp" alt="${data.name}" class="tooltip-image" width="100"/>
+                <span class="tooltip-name">${data.name}</span><br/><span class="tooltip-title">Number of aperances: </span><br/><span class="tooltip-name">${data.value}</span>`)
             })
             .on("mouseout", d => {
                 //tooltip.transition().duration(500).style("opacity", 0)

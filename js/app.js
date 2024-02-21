@@ -42,6 +42,7 @@ d3.select("#selectButton2")
     .append('option')
     .text(function (d) { return d.display; })
     .attr("value", function (d) { return d.value; }) 
+    .property("selected", function(d){ return d.display === "Episode 4"; }) 
 
 d3.json("./starwars-interactions/starwars-episode-4-test.json").then(function(data) {
     const c2 = new chart(data, "#chart2", "#selectButton2")
@@ -50,31 +51,48 @@ d3.json("./starwars-interactions/starwars-episode-4-test.json").then(function(da
 
 // A function that update the chart
 function update(selectedGroup, id, selectButton) {
+    console.log(selectedGroup.length);
+    if(selectedGroup.length == 0) return
     d3.select(id).select("svg").remove();
     //d3.select(selectButton).selectAll('*').remove()
-    d3.json(jsonLinks[selectedGroup]).then(function(data) {
-        const c1 = new chart(data, id, selectButton)
-    })
+    // d3.json(jsonLinks[selectedGroup]).then(function(data) {
+    //     const c1 = new chart(data, id, selectButton)
+    // })
+
+    var promiseArray = []
+    if(selectedGroup.includes(7)) {
+        selectedGroup = [7]
+    }
+    selectedGroup.forEach((linkIndex)=> 
+        promiseArray.push(d3.json(jsonLinks[linkIndex]))
+    )
+    
+        
+    // selectedGroup.map(function(filename) {
+    //     return d3.json(jsonLinks[filename])
+    // })
+
+    Promise.all(promiseArray)
+        .then((data01) => {
+            console.log(id,selectedGroup,data01);
+            const c2 = new chart(data01.length > 1 ? mergeObjects(data01): data01[0], id, selectButton)
+        })
 }
 
 // When the button is changed, run the updateChart function
 d3.select("#selectButton1").on("change", function(d) {
     // recover the option that has been chosen
-    var selectedOption = d3.select(this).property("value")
+    var selectedOption = Array.from(this.selectedOptions).map(x=>parseInt(x.value??x.text))
     update(selectedOption, "#chart1", "#selectButton1")
 })
 
 d3.select("#selectButton2").on("change", function(d) {
     // recover the option that has been chosen
-    var selectedOption = d3.select(this).property("value")
+    var selectedOption = Array.from(this.selectedOptions).map(x=>parseInt(x.value??x.text))
+    //console.log(selectedOption);
     update(selectedOption, "#chart2", "#selectButton2")
 })
 
 
-// Promise.all([
-//     d3.json('file01.json'),
-//     d3.json('file02.json')
-// ]).then(function([data01, data02]){
 
-// })
 

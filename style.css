@@ -1,7 +1,7 @@
 .chart-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 8px;
     user-select: none;
 }
@@ -40,4 +40,21 @@
 
 .tooltip-title {
     font-size: 14px;
+}
+
+.multiselect-dropdown {
+    width: 140px !important;
+}
+
+#dropdown1 {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+#dropdown2 {
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.tooltip-image {
+    border-radius: 100%;
+    padding: 8px;
 }
