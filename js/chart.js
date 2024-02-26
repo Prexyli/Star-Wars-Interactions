@@ -1,4 +1,4 @@
-function chart(data, id, selectButton) {
+function chart(data, id) {
 
     const width = 700;
     const height = 700;
@@ -37,7 +37,7 @@ function chart(data, id, selectButton) {
 
     //Focusing 
     svg
-        .on('foucs', function(a) {return a}) 
+        .on('foucs', function(a) {return a}) //Empty focus just so that blur works
         .on('blur', function(d) {
             resetStyling()
         })
@@ -45,10 +45,9 @@ function chart(data, id, selectButton) {
 
     //Zooming
     const zoom = d3.zoom()
-    .scaleExtent([0.5, 5]) // Min and max zoom levels
+    .scaleExtent([1.0, 5]) // Min and max zoom levels
+    .translateExtent([[0, 0], [width, height]])
     .on("zoom", zoomed)//Zoomed function called when a zoom-event occurs (aka scrolling or clicking)
-    //.on("dblclick.zoom", null); 
-    
 
     // Call zoom
     svg.call(zoom).on("dblclick.zoom", null);
@@ -58,6 +57,22 @@ function chart(data, id, selectButton) {
         link.attr("transform", event.transform);
         node.attr("transform", event.transform);
     }
+
+    
+    //details
+    var details = d3.select(".details")
+
+    //tooltip
+    var tooltip = d3.select(".tooltip")
+        .style("opacity", 0)
+        .attr("class", "tooltip")
+        .style("background-color", "white")
+        .style("border", "solid")
+        .style("border-width", "2px")
+        .style("border-radius", "8px")
+        .style("padding", "5px")
+        .style("position", "absolute")
+        .style("pointer-events", "none")
 
     const link = svg.append("g")
         .attr("stroke", "#999")
@@ -70,21 +85,29 @@ function chart(data, id, selectButton) {
             .on("mouseover", function(d, i) {
                 const data = d.target.__data__
                 d3.select(this).attr("stroke-width", 10)
-                //tooltip.transition().duration(200).style("opacity", .9);
-                tooltip.html(`
-                <div class="tooltip-imggroup">
-                <img src="../Images/Small/${data.source.name.replace("/","_")}.webp" alt="${data.source.name}" class="tooltip-image" width="100"/>
-                <img src="../Images/Small/${data.target.name.replace("/","_")}.webp" alt="${data.target.name}" class="tooltip-image" width="100"/>
+                tooltip
+                    .style("opacity", 0.9)
+                details.html(`
+                <div class="details-imggroup">
+                <img src="../Images/Small/${data.source.name.replace("/","_")}.webp" alt="${data.source.name}" class="details-image" width="100"/>
+                <img src="../Images/Small/${data.target.name.replace("/","_")}.webp" alt="${data.target.name}" class="details-image" width="100"/>
                 </div>
-                <span class="tooltip-title">INTERACTIONS BETWEEN</span><br/>
-                <span class="tooltip-name">${data.source.name}</span><br>
-                <span class="tooltip-title">AND</span><br/><span class="tooltip-name">${data.target.name}</span><br/>
-                <span class="tooltip-title">Number of interaction: </span><br/><span class="tooltip-name">${data.value}</span>       
+                <span class="details-title">INTERACTIONS BETWEEN</span><br/>
+                <span class="details-name">${data.source.name}</span><br>
+                <span class="details-title">AND</span><br/><span class="details-name">${data.target.name}</span><br/>
+                <span class="details-title">Number of interaction: </span><br/><span class="details-name">${data.value}</span>       
                 `)
             })
+            .on("mousemove", function(d) {
+                const data = d.target.__data__
+                tooltip
+                    .html(`${data.source.name} ━ ${data.target.name}<br/>Interactions: ${data.value}`)
+                    .style("left", (d.x) + "px")
+                    .style("top", (d.y - 40) + "px")
+            }) 
             .on("mouseout", function(d) {
                 d3.select(this).attr("stroke-width", Math.sqrt(d.target.__data__.value)*2.0)
-                //tooltip.transition().duration(500).style("opacity", 0)
+                tooltip.style("opacity", 0)
             })
 
     const node = svg.append("g")
@@ -99,21 +122,30 @@ function chart(data, id, selectButton) {
             .on("mouseover", (d, i) => {
                 const data = d.target.__data__
                 //console.log(d);
-                //tooltip.transition().duration(200).style("opacity", .9);
-                tooltip.html(`
-                <img src="../Images/Small/${data.name.replace("/","_")}.webp" alt="${data.name}" class="tooltip-image" width="100"/>
-                <span class="tooltip-name">${data.name}</span><br/>
-                <span class="tooltip-title">Number of aperances: </span><br/>
-                <span class="tooltip-name">${data.value}</span><br/>
-                <span class="tooltip-title">Interacted with: </span><br/>
-                <div class="tooltip-imagegrid">${findConnected(data.name).nodesRaw.map(d => {
-                    return `<img src="../Images/Tiny/${d.name.replace("/","_")}.webp" alt="${d.name}" class="tooltip-image" width="45"/>`
+                tooltip
+                    .style("opacity", 0.9)
+                //details.transition().duration(200).style("opacity", .9);
+                details.html(`
+                <img src="../Images/Small/${data.name.replace("/","_")}.webp" alt="${data.name}" class="details-image" width="100"/>
+                <span class="details-name">${data.name}</span><br/>
+                <span class="details-title">Number of aperances: </span><br/>
+                <span class="details-name">${data.value}</span><br/>
+                <span class="details-title">Interacted with: </span><br/>
+                <div class="details-imagegrid">${findConnected(data.name).nodesRaw.map(d => {
+                    return `<img src="../Images/Tiny/${d.name.replace("/","_")}.webp" alt="${d.name}" class="details-image" width="45"/>`
                 }).join('')
                 }</div>
                 `)
             })
+            .on("mousemove", function(d) {
+                const data = d.target.__data__
+                tooltip
+                    .html(`${data.name}<br/>Apperances: ${data.value}`)
+                    .style("left", (d.x) + "px")
+                    .style("top", (d.y - 30) + "px")
+            })
             .on("mouseout", d => {
-                //tooltip.transition().duration(500).style("opacity", 0)
+                tooltip.style("opacity", 0)
             })
             .on("click", event => handleClick(event))
             .call(d3.drag()
@@ -121,14 +153,13 @@ function chart(data, id, selectButton) {
                 .on("drag", dragged)
                 .on("end", dragended))
         
-    node.append("title")
-        .text(d => d.name)
+    // node.append("title")
+    //     .text(d => d.name)
 
 
     function handleClick(event) {
         var name = event.target.className.baseVal
-        var connected = findConnected(name)
-        
+        var connected = findConnected(name.replace("_"," "))
         if(clicked != name) {
             clicked = name
             d3.selectAll('circle')
@@ -206,16 +237,14 @@ function chart(data, id, selectButton) {
             })
     }
 
-    //tooltip
-    var tooltip = d3.select(".tooltip")
 
     //set the position attributes of links and nodes on each simulation tick
     function ticked () {
         link
-            .attr("x1", d=> d.source.x)
-            .attr("y1", d=> d.source.y)
-            .attr("x2", d=> d.target.x)
-            .attr("y2", d=> d.target.y)
+            .attr("x1", d=> Math.max(10, Math.min(width - 10, d.source.x))) 
+            .attr("y1", d=> Math.max(10, Math.min(height - 10, d.source.y)))
+            .attr("x2", d=> Math.max(10, Math.min(width - 10, d.target.x)))
+            .attr("y2", d=> Math.max(10, Math.min(height - 10, d.target.y)))
 
         node
             .attr("cx", d => d.x = Math.max(10, Math.min(width - 10, d.x)))
@@ -240,10 +269,6 @@ function chart(data, id, selectButton) {
     }
 
     //invalidation.then(() => simulation.stop())
-
-    
-
-    
 
     return svg.node()
 
