@@ -121,6 +121,7 @@ function chart(data, id) {
             .attr("class", d => d.name.replace(/ /g,"_"))
             .on("mouseover", (d, i) => {
                 const data = d.target.__data__
+                const interactions = findConnected(data.name)
                 //console.log(d);
                 tooltip
                     .style("opacity", 0.9)
@@ -130,8 +131,8 @@ function chart(data, id) {
                 <span class="details-name">${data.name}</span><br/>
                 <span class="details-title">Number of aperances: </span><br/>
                 <span class="details-name">${data.value}</span><br/>
-                <span class="details-title">Interacted with: </span><br/>
-                <div class="details-imagegrid">${findConnected(data.name).nodesRaw.map(d => {
+                <span class="details-title">Interacted with <span class="details-name">${interactions.nodesRaw.length}</span>: </span><br/>
+                <div class="details-imagegrid">${interactions.nodesRaw.map(d => {
                     return `<img src="../Images/Tiny/${d.name.replace("/","_")}.webp" alt="${d.name}" class="details-image" width="45"/>`
                 }).join('')
                 }</div>
